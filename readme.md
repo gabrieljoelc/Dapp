@@ -5,7 +5,7 @@ Link to article: [here](https://blog.usejournal.com/build-a-decentralized-react-
 
 
 
-## Ensure you have Node.js installed on your machine if not download
+## Ensure you have Node.js and Docker installed on your machine if not download
 
 ## To get started
 * Install  Ganache globally
@@ -25,6 +25,13 @@ Link to article: [here](https://blog.usejournal.com/build-a-decentralized-react-
     ```
     ipfs daemon 
     ```
+    
+* Start mongo with Docker
+```
+mkdir ~/docker-data
+docker run -d -p 27017:27017 -v ~/docker-data:/data/db --name mongo-db -d mongo:latest
+```
+
 * cd into the backend folder and run
     ```npm start ```
 
